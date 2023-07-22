@@ -21,6 +21,18 @@ int _printf(const char *format, ...)
 			n_char++;
 			fmt_idx++;
 		}
+		else if (format[fmt_idx + 1] == 'c')
+		{
+			_putchar(va_arg(args_p, int));
+			fmt_idx += 2;
+			n_char += 1;
+		}
+		else if (format[fmt_idx + 1] == 's')
+		{
+			_print_string(va_arg(args_p, char *));
+		}
+
+
 	}
 	return (n_char);
 }
