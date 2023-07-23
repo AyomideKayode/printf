@@ -16,7 +16,10 @@ int main(void)
 	rv1 = printf("%c olix\n", ap);
 	printf("rv1= %d\n", rv1);
 	rv1 = printf("This is %s\n", olix);
-	printf("rv1= %d\n", rv1);
+	rv1 = printf("This is %c %s and %s\n", 'a', "kayode", "Olix");
+	printf("rv1 = %d\n", rv1);
+	rv1 = printf("I score 100%% in my jamb and %s score %c 90%%.\n", "Kay", 'a');
+	printf("rv1 = %d\n", rv1);
 
 // Test case for customized printf() function
 	puts("\nUsing customized printf()\n---");
@@ -26,4 +29,9 @@ int main(void)
 	printf("rv2= %d\n", rv2);
 	rv2 = _printf("This is %s\n", olix);
 	printf("rv2= %d\n", rv2);
+	rv2 = _printf("This is %c %s and %s\n", 'a', "kayode", "Olix");
+	printf("rv2 = %d\n", rv2);
+	rv2 = _printf("I score 100%% in my jamb and %s score %c 90%%.\n", "Kay", 'a');
+	printf("rv2 = %d\n", rv2);
+	
 }
