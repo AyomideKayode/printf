@@ -36,4 +36,5 @@ int _int_tobin(va_list args_p)
 		_putchar('0' + binary_digits[i]);
 		i--;
 	}
+	return (len);
 }
