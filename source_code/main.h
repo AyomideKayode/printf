@@ -31,3 +31,5 @@ int _print_int(va_list args_p);
 int unsigned_int(va_list args_p);
 int print_unsgined_number(unsigned int n);
 int _int_tobin(va_list args_p);
+
+#endif /* PRINTF_H */
