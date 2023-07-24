@@ -6,10 +6,11 @@
 #include <unistd.h>
 
 /**
- * specifier - to define a structure.
- * @sign: this contains the specific character.
- * @f: The function associated.
+ * struct specifier - structure to define format specifier and handle function.
+ * @sign: contains the format specific char (e.g., "c", "s", "d", etc.).
+ * @f: The function associated with format specifier.
  */
+
 struct specifier
 {
 	char *sign;
@@ -30,5 +31,3 @@ int _print_int(va_list args_p);
 int unsigned_int(va_list args_p);
 int print_unsgined_number(unsigned int n);
 int _int_tobin(va_list args_p);
-
-#endif /* PRINTF_H */
