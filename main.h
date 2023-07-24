@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 /**
- * struct specifier - to define a structure.
+ * specifier - to define a structure.
  * @sign: this contains the specific character.
  * @f: The function associated.
  */
@@ -18,7 +18,7 @@ struct specifier
 
 typedef struct specifier specifier_t;
 
-/* Prototypes for functions */
+/* Prototype functions */
 int _putchar(char c);
 int _printf(const char *format, ...);
 int get_function(const char *format, specifier_t f_array[], va_list arg_p);
@@ -29,5 +29,6 @@ int _print_numbers(va_list args_p);
 int _print_int(va_list args_p);
 int unsigned_int(va_list args_p);
 int print_unsgined_number(unsigned int n);
+int _int_tobin(va_list args_p);
 
-#endif
+#endif /* PRINTF_H */

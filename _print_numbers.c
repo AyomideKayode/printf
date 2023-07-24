@@ -33,8 +33,8 @@ int _print_numbers(va_list args_p)
 		num %= div;
 		div /= 10;
 	}
-	return (len); /* added line to return number of digits printed */
 }
+
 /**
  * print_unsgined_number - Prints an unsigned number
  * @n: unsigned integer to be printed
