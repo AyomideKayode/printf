@@ -55,13 +55,12 @@ int _print_cent(va_list args_p)
 int _print_int(va_list args_p)
 {
 	int n;
-
 	n = _print_numbers(args_p);
 	return (n);
 }
 /**
- * unsigned_int - Prints Unsigned integers
- * @args_p: List of all of the argumets
+ * unsigned_integer - Prints Unsigned integers
+ * @list: List of all of the argumets
  * Return: a count of the numbers
  */
 int unsigned_int(va_list args_p)

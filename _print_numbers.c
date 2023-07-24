@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _print_numbers - prints numbers send to function
  * @args_p: Arguement of numbers.
