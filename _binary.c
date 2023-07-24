@@ -14,6 +14,11 @@ void _recursive_binary(unsigned int n)
 }
 
 /**
+ * _print_binary - print the converted integer from
+ * arguement to binary.
+ * @args_p: argument parameter to convert.
+ *
+ * Return: length of binary digit
  */
 int _print_binary(va_list args_p)
 {
