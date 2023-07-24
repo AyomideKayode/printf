@@ -9,7 +9,7 @@ int main(void)
 	char ap = 'G';
 
 
-// test case for normal C printf()
+	/*test case for normal C printf()*/
 	puts("\nUsing original printf()\n---");
 	rv1 = printf("OlixKay\n");
 	printf("rv is %d\n", rv1);
@@ -21,7 +21,7 @@ int main(void)
 	rv1 = printf("I score 100%% in my jamb and %s score %c 90%%.\n", "Kay", 'a');
 	printf("rv1 = %d\n", rv1);
 
-// Test case for customized printf() function
+	/*Test case for customized printf() function*/
 	puts("\nUsing customized printf()\n---");
 	rv2 = _printf("OlixKay\n");
 	printf("rv2 is %d\n", rv2);
@@ -33,5 +33,4 @@ int main(void)
 	printf("rv2 = %d\n", rv2);
 	rv2 = _printf("I score 100%% in my jamb and %s score %c 90%%.\n", "Kay", 'a');
 	printf("rv2 = %d\n", rv2);
-	
 }
