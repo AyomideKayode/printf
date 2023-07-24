@@ -46,3 +46,33 @@ int _print_cent(va_list args_p)
 	_putchar('%');
 	return (1);
 }
+
+/**
+ * _print_int - print integer.
+ * @args_p: argument of integer to print.
+ * Return: length of digits printed.
+ */
+int _print_int(va_list args_p)
+{
+	int n;
+	n = _print_numbers(args_p);
+	return (n);
+}
+/**
+ * unsigned_integer - Prints Unsigned integers
+ * @list: List of all of the argumets
+ * Return: a count of the numbers
+ */
+int unsigned_int(va_list args_p)
+{
+	unsigned int n;
+
+	n = va_arg(args_p, unsigned int);
+
+	if (n == 0)
+		return (print_unsgined_number(n));
+
+	if (n < 1)
+		return (-1);
+	return (print_unsgined_number(n));
+}

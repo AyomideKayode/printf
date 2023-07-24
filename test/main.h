@@ -24,5 +24,8 @@ int get_function(const char *format, specifier_t f_array[], va_list arg_p);
 int _print_string(va_list args_p);
 int _print_char(va_list args_p);
 int _print_cent(va_list args_p);
-
+int _print_numbers(va_list args_p);
+int _print_int(va_list args_p);
+int unsigned_int(va_list args_p);
+int print_unsgined_number(unsigned int n);
 #endif

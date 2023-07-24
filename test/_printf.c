@@ -14,6 +14,8 @@ int _printf(const char *format, ...)
 		{"c", _print_char},
 		{"s", _print_string},
 		{"%", _print_cent},
+		{"d", _print_int},
+		{"i", _print_int},
 		{NULL, NULL}
 	};
 
