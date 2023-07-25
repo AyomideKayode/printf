@@ -61,8 +61,13 @@ int _print_int(va_list args_p)
 }
 /**
  * unsigned_int - Prints Unsigned integers
+<<<<<<< HEAD
  * @args_p: argument of unsigned ints
  * Return: length of unsigned digits printed
+=======
+ * @args_p: argument of unsigned ints to print
+ * Return: length of unsigned digits printed.
+>>>>>>> 22748641eef03ba3c842011664030f7f3b137a15
  */
 int unsigned_int(va_list args_p)
 {

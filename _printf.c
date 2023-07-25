@@ -11,12 +11,12 @@ int _printf(const char *format, ...)
 {
 	int n_chars;
 	specifier_t f_array[] = {
-		{"c", _print_char}, /* character conversion function */
-		{"s", _print_string}, /* string conversion function */
-		{"%", _print_cent}, /* percentage conversion function */
-		{"d", _print_int}, /* integer conversion function */
-		{"i", _print_int}, /* integer conversion function */
-		{"b", _int_tobin}, /* binary conversion function */
+		{"c", _print_char},
+		{"s", _print_string},
+		{"%", _print_cent},
+		{"d", _print_int},
+		{"i", _print_int},
+		{"b", _print_binary},
 		{NULL, NULL}
 	};
 
