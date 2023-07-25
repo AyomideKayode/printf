@@ -19,7 +19,7 @@ struct specifier
 
 typedef struct specifier specifier_t;
 
-/* Prototype functions */
+/* Function Prototypes for the main .c functions */
 int _putchar(char c);
 int _printf(const char *format, ...);
 int get_function(const char *format, specifier_t f_array[], va_list arg_p);
