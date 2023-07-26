@@ -10,7 +10,7 @@
 
 int _print_binary(va_list args_p)
 {
-	unsigned int temp;
+	unsigned int temp, i;
 	unsigned int n = va_arg(args_p, unsigned int);
 	int len = 0;
 	char *s = NULL;
@@ -32,7 +32,7 @@ int _print_binary(va_list args_p)
 	if (!s)
 		return (-1);
 
-	for (int i = len - 1; i >= 0; i--)
+	for (i = len - 1; i >= 0; i--)
 	{
 		s[i] = (n & 1) ? '1' : '0';
 		n >>= 1;
@@ -40,7 +40,7 @@ int _print_binary(va_list args_p)
 
 	s[len] = '\0';
 
-	for (int i = 0; i < len; i++)
+	for (i = 0; i < len; i++)
 	{
 		_putchar(s[i]);
 	}
