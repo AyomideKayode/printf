@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _print_binary - print the converted integer from
- * arguement to binary.
- * @args_p: argument parameter to convert.
+ * _print_octal - print the octal representation
+ * of an unsigned number.
+ * @args_p: va_list argument containing the unsigned
+ * integer to print.
  *
- * Return: length of binary digit
+ * Return: the length of converted digits.
  */
-
-int _print_binary(va_list args_p)
+int _print_octal(va_list args_p)
 {
 	unsigned int temp;
 	unsigned int n = va_arg(args_p, unsigned int);
@@ -25,7 +25,7 @@ int _print_binary(va_list args_p)
 	while (temp > 0)
 	{
 		len++;
-		temp >>= 1;
+		temp >>= 3;
 	}
 
 	s = malloc(sizeof(char) * (len + 1));
@@ -34,8 +34,8 @@ int _print_binary(va_list args_p)
 
 	for (i = len - 1; i >= 0; i--)
 	{
-		s[i] = (n & 1) ? '1' : '0';
-		n >>= 1;
+		s[i] = '0' + (n & 7);
+		n >>= 3;
 	}
 
 	s[len] = '\0';

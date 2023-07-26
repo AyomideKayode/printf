@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * get_function - Get the main string and all the appr. parameters
- * @format: string to be printed.
- * @f_array: all functions.
- * @arg_p: arguement parameter.
+ * @format: The format string to be printed.
+ * @f_array: Structures Array containing all format specifiers and functions.
+ * @arg_p: va_list of arguements parameter.
  * Return: number of characters printed.
  */
 int get_function(const char *format, specifier_t f_array[], va_list arg_p)
