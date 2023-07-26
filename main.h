@@ -29,9 +29,12 @@ int _print_cent(va_list args_p);
 int _print_numbers(va_list args_p);
 int _print_int(va_list args_p);
 int unsigned_int(va_list args_p);
-int print_unsgined_number(unsigned int n);
+int _print_unsigned_number(unsigned int n);
 int _base_len(unsigned int n, int base);
 void _recursive_binary(unsigned int n);
 int _print_binary(va_list args_p);
+int _print_octal(va_list args_p);
+int _print_hexadecimal(va_list args_p);
+int _print_hexadecimal_X(va_list args_p);
 
 #endif /* PRINTF_H */

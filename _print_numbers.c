@@ -42,13 +42,13 @@ int _print_numbers(va_list args_p)
 }
 
 /**
- * print_unsgined_number - Prints an unsigned number.
+ * _print_unsigned_number - Prints an unsigned number.
  * @n: unsigned integer to be printed.
  *
  * This function handles the '%u' format specifier and prints an unsigned int.
  * Return: The number of digits printed.
  */
-int print_unsgined_number(unsigned int n)
+int _print_unsigned_number(unsigned int n)
 {
 	int div;
 	int len;

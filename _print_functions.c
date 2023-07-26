@@ -77,9 +77,9 @@ int unsigned_int(va_list args_p)
 	n = va_arg(args_p, unsigned int);
 
 	if (n == 0)
-		return (print_unsgined_number(n));
+		return (_print_unsigned_number(n));
 
 	if (n < 1)
 		return (-1);
-	return (print_unsgined_number(n));
+	return (_print_unsigned_number(n));
 }
