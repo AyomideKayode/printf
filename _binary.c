@@ -10,9 +10,9 @@
 
 int _print_binary(va_list args_p)
 {
-	unsigned int temp, i;
+	unsigned int temp;
 	unsigned int n = va_arg(args_p, unsigned int);
-	int len = 0;
+	int i, len = 0;
 	char *s = NULL;
 
 	if (n == 0)
