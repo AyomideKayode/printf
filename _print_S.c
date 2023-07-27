@@ -38,7 +38,7 @@ int _print_S(va_list args_p)
 			_putchar('x');
 			_putchar('O');
 			_putchar('A');
-			len +=4;
+			len += 4;
 
 		}
 		else
