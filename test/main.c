@@ -41,5 +41,6 @@ int main(void)
     printf("Unknown:[%r]\n");*/
     _printf("%b\n", 98); /* For binary in Task 2 */
     _printf("%S\n", "Best\nSchool"); /* For S conversion in Task 5*/
+    _printf("%S\n", "Best\nSchool"); /* For S conversion in Task 5*/
     return (0);
 }
