@@ -21,6 +21,7 @@ int _printf(const char *format, ...)
 		{"u", unsigned_int},
 		{"x", _print_hexadecimal},
 		{"X", _print_hexadecimal_X},
+		{"S", _print_S},
 		{NULL, NULL}
 	};
 

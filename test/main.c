@@ -39,6 +39,7 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");*/
-    _printf("%b\n", 98);
+    _printf("%b\n", 98); /* For binary in Task 2 */
+    _printf("%S\n", "Best\nSchool"); /* For S conversion in Task 5*/
     return (0);
 }

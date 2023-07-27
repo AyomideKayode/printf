@@ -36,5 +36,7 @@ int _print_binary(va_list args_p);
 int _print_octal(va_list args_p);
 int _print_hexadecimal(va_list args_p);
 int _print_hexadecimal_X(va_list args_p);
+int _print_S(va_list args_p);
+int _print_hex_2digits(unsigned char num);
 
 #endif /* PRINTF_H */
