@@ -11,6 +11,7 @@ int _print_S(va_list args_p)
 {
 	char *str;
 	int i, len = 0;
+	unsigned char ch, hex1, hex2;
 
 	str = va_arg(args_p, char *);
 
@@ -19,27 +20,16 @@ int _print_S(va_list args_p)
 
 	for (i = 0; str[i]; i++)
 	{
-		/*if (str[i] < 32 || str[i] >= 127)*/
-		if ((str[i] < 32 && str[i] != '\n') || str[i] >= 127)
+		if ((str[i] > 0 && str[i] < 32) || str[i] >= 127)
 		{
+			ch = (unsigned char)str[i];
+			hex1 = (ch >> 4) & 0xF;
+			hex2 = ch & 0xF;
+			
 			_putchar('\\');
 			_putchar('x');
-			if (str[i] < 16)
-				_putchar('0');
-			len += 3;
-
-			/* Helper function to print two hexadecimal digits.*/
-			len += _print_hex_2digits(str[i]);
-		}
-		/* Handle special case for newline character */
-		else if (str[i] == '\n')
-		{
-			_putchar('\\');
-			_putchar('x');
-			_putchar('O');
-			_putchar('A');
-			len += 4;
-
+			_putchar(hex1 < 10 ? hex1 + '0' : hex1 - 10 + 'A');
+			_putchar(hex2 < 10 ? hex2 + '0' : hex2 - 10 + 'A');
 		}
 		else
 		{
@@ -49,20 +39,4 @@ int _print_S(va_list args_p)
 	}
 
 	return (len);
-}
-
-/**
- * _print_hex_2digits - Print the hexadecimal representation of a number.
- * (Always 2 digits).
- * @num: The number to print in hexadecimal.
- *
- * Return: The number of characters printed (always 2).
- */
-int _print_hex_2digits(unsigned char num)
-{
-	char hex_digits[] = "0123456789ABCDEF";
-
-	_putchar(hex_digits[num / 16]);
-	_putchar(hex_digits[num % 16]);
-	return (2);
 }
