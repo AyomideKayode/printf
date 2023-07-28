@@ -15,8 +15,8 @@ int _print_S(va_list args_p)
 
 	str = va_arg(args_p, char *);
 
-	if (str == NULL)
-		str = "(null)";
+	if (!str)
+		return (-1);
 
 	for (i = 0; str[i]; i++)
 	{
@@ -25,7 +25,7 @@ int _print_S(va_list args_p)
 			ch = (unsigned char)str[i];
 			hex1 = (ch >> 4) & 0xF;
 			hex2 = ch & 0xF;
-			
+
 			_putchar('\\');
 			_putchar('x');
 			_putchar(hex1 < 10 ? hex1 + '0' : hex1 - 10 + 'A');
